@@ -1,0 +1,54 @@
+{
+  "reporting_entity_name": "United HealthCare Services",
+  "reporting_entity_type": "Third-Party Administrator",
+  "reporting_structure": [
+    {
+      "reporting_plans": [
+        {
+          "plan_name": "UHC CHOICE/UBH",
+          "plan_id": "463950688",
+          "plan_id_type": "EIN",
+          "plan_market_type": "group"
+        }
+      ],
+      "in_network_files": [
+        {
+          "description": "in-network files",
+          "location": "https://uhc-tic-mrf.azureedge.net/public-mrf/2022-10-01/2022-10-01_United-HealthCare-Services_Third-Party-Administrator_EP1-50_C1_in-network-rates.json.gz"
+        },
+        {
+          "description": "in-network CMC Transplant shared files",
+          "location": "https://saticprod.blob.core.windows.net/optumeven/CMC_Transplant_MRRF.json"
+        }
+      ],
+      "allowed_amount_file": {
+        "description": "allowed amount file",
+        "location": "https://uhc-tic-mrf.azureedge.net/public-mrf/2022-10-01/2022-10-01_11TH-HOUR-BREWING-LLC-DBA-BOOJ_UHC-CHOICEUBH_allowed-amounts.json.gz"
+      }
+    },
+    {
+      "reporting_plans": [
+        {
+          "plan_name": "UHC CHOICE PLUS/UBH",
+          "plan_id": "463950688",
+          "plan_id_type": "EIN",
+          "plan_market_type": "group"
+        }
+      ],
+      "in_network_files": [
+        {
+          "description": "in-network files",
+          "location": "https://uhc-tic-mrf.azureedge.net/public-mrf/2022-10-01/2022-10-01_United-HealthCare-Services_Third-Party-Administrator_PS1-50_C2_in-network-rates.json.gz"
+        },
+        {
+          "description": "in-network CMC Transplant shared files",
+          "location": "https://saticprod.blob.core.windows.net/optumeven/CMC_Transplant_MRRF.json"
+        }
+      ],
+      "allowed_amount_file": {
+        "description": "allowed amount file",
+        "location": "https://uhc-tic-mrf.azureedge.net/public-mrf/2022-10-01/2022-10-01_11TH-HOUR-BREWING-LLC-DBA-BOOJ_UHC-CHOICE-PLUSUBH_allowed-amounts.json.gz"
+      }
+    }
+  ]
+}
