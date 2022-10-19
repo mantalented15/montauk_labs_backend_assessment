@@ -21,20 +21,23 @@ driver.get('https://transparency-in-coverage.uhc.com/')
 try:
     # a = WebDriverWait(driver,180).until(EC.presence_of_element_located((By.XPATH, '//li[@data-testid="list-item-1"]/div/div/a')))
     # a = WebDriverWait(driver,180).until(EC.visibility_of_element_located((By.XPATH, '//li[@data-testid="list-item-1"]/div/div/a')))
-    a = WebDriverWait(driver,180).until(EC.visibility_of_element_located((By.XPATH, '//li[@data-testid="list-item-1"]//a')))
+    a = WebDriverWait(driver,180).until(EC.presence_of_all_elements_located((By.XPATH, '//ul[@data-testid="list-items"]//a')))
 
-    href = a.get_attribute('href')
+    # href = a.get_attribute('href')
     # a = WebDriverWait(driver,180).until(EC.presence_of_all_elements_located((By.XPATH, '//div[@class="ant-space-item"]/a')))
-    # a = WebDriverWait(driver,180).until(EC.presence_of_all_elements_located((By.XPATH, '//ul[@class="ant-list-items"]')))
+    # ul = WebDriverWait(driver,240).until(EC.presence_of_all_elements_located((By.XPATH, '//ul[@class="ant-list-items"]')))
+    # a = ul.find_elements_by_xpath('//a')
 except:
     print("Timed out waiting for page to load")
 
+for a_i in a:
+    print(a_i)
 
 # a_list = []
-# for i in range(len(a)):
-#     a_list.append(a[i].text)
+for i in range(len(a)):
+    print(a[i].get_Attribute('href'))
 
 # print(a.text)
 # print(a.get_attribute("href"))
 # print(a_list)
-print(requests.get(href).text)
+# print(requests.get(href).text)
